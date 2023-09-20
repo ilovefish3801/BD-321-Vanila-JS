@@ -1,3 +1,5 @@
+let var2 = prompt("vvedi znachennya: ")
+
 // let nameUser, age, surname;
 
 // nameUser = "John";
@@ -97,14 +99,34 @@ console.log(tempUser)
 // destruct object
 const {name, surname, address} = tempUser;
 console.log(surname)
-
+// delete key
 delete tempUser.age
 
 console.log(tempUser)
 
 // Functions
+function testFunf(a, b){
+    return a
+}
+
+let anonimFunc = function(a, b){
+    return a
+}
+
+let arrorFunc = (a, b) => {
+    return a
+}
+
+
+
 
 // Listeners
+
+// Exeption
+
+// Loops
+
+// Conditional
 
 
 
