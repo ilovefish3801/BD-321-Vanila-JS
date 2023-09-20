@@ -1,4 +1,3 @@
-let var2 = prompt("vvedi znachennya: ")
 
 // let nameUser, age, surname;
 
@@ -76,57 +75,70 @@ let var2 = prompt("vvedi znachennya: ")
 // console.log(numberArr)
 
 
-// Object
-let tempUser = {
-    name: "John",
-    surname: "Doe",
-    age: 21,
-    address: [],
-    family:{
-        son: {
-            name: "Jack",
-            age: 1
-        }
-    }
-}
+// // Object
+// let tempUser = {
+//     name: "John",
+//     surname: "Doe",
+//     age: 21,
+//     address: [],
+//     family:{
+//         son: {
+//             name: "Jack",
+//             age: 1
+//         }
+//     }
+// }
 
-console.log(tempUser.name)
+// console.log(tempUser.name)
 
-// add new element 
-tempUser.salary = 3000
-console.log(tempUser)
+// // add new element 
+// tempUser.salary = 3000
+// console.log(tempUser)
 
-// destruct object
-const {name, surname, address} = tempUser;
-console.log(surname)
-// delete key
-delete tempUser.age
+// // destruct object
+// const {name, surname, address} = tempUser;
+// console.log(surname)
+// // delete key
+// delete tempUser.age
 
-console.log(tempUser)
+// console.log(tempUser)
 
-// Functions
-function testFunf(a, b){
-    return a
-}
+// // Functions
+// function testFunf(a, b){
+//     return a
+// }
 
-let anonimFunc = function(a, b){
-    return a
-}
+// let anonimFunc = function(a, b){
+//     alert(a+b)
+//     return a
+// }
 
-let arrorFunc = (a, b) => {
-    return a
-}
+// let arrorFunc = (a, b) => {
+
+//     return a
+// } 
 
 
+// anonimFunc(1, 2)
 
-
-// Listeners
 
 // Exeption
+try {
+    result = 1 / 1;
+    alert(result)
+} catch (e) {
+    alert(e)
+} finally{
+    alert('Final')
+}
 
 // Loops
 
+
 // Conditional
+
+
+// Listeners
 
 
 
