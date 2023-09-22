@@ -3,8 +3,11 @@ const changeBgColor = (selector, color) => {
     element.style.backgroundColor = color;
 }
 
-const clearHtmlElement = () => {
-
+const clearHtmlElement = (selector) => {
+    // get element
+    const TARGET = document.querySelector(selector);
+    // clean html
+    TARGET.innerHTML = '';
 }
 
 // start point
@@ -27,13 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const NAME = document.querySelector(".form__name");
         const COLOR = document.getElementById("form__color");
         // get value
-        const USER_NAME = NAME.value;
-        const USER_COLOR = COLOR.value;
+        const name = NAME.value;
+        const color = COLOR.value;
         // display result
-        changeBgColor("body", USER_COLOR)
+        changeBgColor("body", color)
+
+        // create data frame
+        // const USER_DATA = {
+        //     name: USER_NAME,
+        //     color: USER_COLOR
+        // }
+
+        const USER_DATA = { name, color }
+        console.log(USER_DATA)
+
 
         // clear form
-        NAME.value = "";
+        // NAME.value = "";
 
         // display status request
 
