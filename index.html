@@ -9,9 +9,16 @@
 <body>
     Hello world!
 
-    <button id="red">
+    <button onclick="changeBgColor('body', 'yellow')" id="red">
         Змінити фон сторінки на червоний
     </button>
+
+    <section style="margin-top: 50px;">
+        <form class="form">
+            <input class="form__name" type="text" placeholder="Name">
+            <input type="submit" value="Send">
+        </form>
+    </section>
 
     <script src="/scripts/index.js"></script>
 </body>
