@@ -20,8 +20,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
         e.preventDefault();
         // get elements
         const NAME = document.querySelector(".form__name");
+        const COLOR = document.getElementById("form__color");
+        // get value
         const USER_NAME = NAME.value;
-        console.log(USER_NAME)
+        const USER_COLOR = COLOR.value;
+        // display result
+        changeBgColor("body", USER_COLOR)
+
+        // clear form
+        NAME.value = "";
+
+        // display status request
+        alert("You request sended!")
+        // console.log(USER_NAME, USER_COLOR)
 
     })
     // RED_BTN.addEventListener("click", (e)=>{
