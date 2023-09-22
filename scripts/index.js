@@ -3,6 +3,10 @@ const changeBgColor = (selector, color) => {
     element.style.backgroundColor = color;
 }
 
+const clearHtmlElement = () => {
+
+}
+
 // start point
 document.addEventListener("DOMContentLoaded", () => {
     // get elements
