@@ -122,23 +122,96 @@
 // anonimFunc(1, 2)
 
 
-// Exeption
-try {
-    result = 1 / 1;
-    alert(result)
-} catch (e) {
-    alert(e)
-} finally{
-    alert('Final')
-}
+// // Exeption
+// try {
+//     result = 1 / 1;
+//     alert(result)
+// } catch (e) {
+//     alert(e)
+// } finally{
+//     alert('Final')
+// }
 
 // Loops
+// let a = 0
+// while(a < 5){
+//     console.log(a);
+//     a++;
+// }
+
+// console.log("_____", a)
+
+// a = 6
+// do{
+//     console.log(a)
+//     a++
+// }while(a < 5)
+
+// for(i = 0; i <= 10; i++){
+//     console.log(i)
+// }
+
+// let arr = [1, 2, "p"]
+
+// arr.map((item)=>{
+//     console.log(item)
+// })
+
+// arr.forEach((item)=>{
+//     console.log(item)
+// })
 
 
 // Conditional
+// && - and, || - or
+// let a = prompt("Vvedit temperaturu: ")
+// if (a >= 10) {
+//     alert("teplo")
+// } else if (a < 10 && a > 0) {
+//     alert('pomirno')
+// } else {
+//     alert('cholodno')
+// }
+
+// let salary = 200
+// if(salary){
+//     alert("Ви працюєте!")
+// }else{
+//     alert("Ви не працюєте")
+// }
+
+// salary >= 150 ? alert("Працюєте") : alert("Не працюєте")
+
+// // select condition
+
+// let a = 4;
+// switch(a){
+//     case 2:
+//         alert("2")
+//         break
+//     case 4:
+//     case 6:
+//         alert("current")  
+//         break
+//     default:
+//         alert("else value")          
+// }
 
 
 // Listeners
+
+// start point
+document.addEventListener("DOMContentLoaded", ()=>{
+    console.log(null + 'a')
+    // get elements
+    const RED_BTN = document.querySelector("#red");
+    const BODY = document.querySelector("body")
+    // add listeners
+    RED_BTN.addEventListener("click", (e)=>{
+        e.preventDefault();
+        BODY.style.backgroundColor = "#f00";
+    })
+})
 
 
 
