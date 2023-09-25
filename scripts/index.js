@@ -34,7 +34,14 @@ function showPassword(TARGET) {
 
   
   const passwordConfirm = (element)=>{
+    const password = element.value
+    const confirm = document.querySelector('.form__input_showPassword_2')
 
+    const confirmPassword = confirm.value
+
+    if (element.value != confirm.value){
+        // make error
+    }
   }
 
 
@@ -93,7 +100,8 @@ function showPassword(TARGET) {
         const USER_DATA = {
             role,
             lastUserName,
-            userName
+            userName,
+            password
         }
         console.log(USER_DATA)
     })
