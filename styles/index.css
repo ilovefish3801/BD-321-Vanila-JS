@@ -75,6 +75,8 @@ header,footer {
 }
 
 .form__top_LFor_Lblock {
+    cursor: pointer;
+
     width: 207px;
     height: 45px;
     position: absolute;
@@ -96,6 +98,8 @@ header,footer {
 }
 
 .form__top_LFor_Rblock {
+    cursor: pointer;
+    
     width: 207px;
     height: 45px;
     position: absolute;
@@ -118,6 +122,8 @@ header,footer {
 
 
 .form__top_LFor_Lblock.active {
+    cursor: default;
+
     width: 207px;
     height: 45px;
     position: absolute;
@@ -139,6 +145,8 @@ header,footer {
 }
 
 .form__top_LFor_Rblock.active {
+    cursor: default;
+
     width: 207px;
     height: 45px;
     position: absolute;
@@ -303,12 +311,23 @@ header,footer {
     border-radius: 24px;
     background: rgba(30, 49, 115, 0.80);
     transition: 0.2s;
+    border: none;
 }
 
-.form__input_sumbit:hover {
+.form__input_sumbit:disabled{
+    background: rgba(23, 36, 85, 0.8);
+}
+
+.form__input_sumbit:enabled{
+    background: rgba(40, 68, 167, 0.8);
+
+    cursor: pointer;
+}
+
+/* .form__input_sumbit:hover {
     background: #1E3173;
     transition: 0.2s;
-}
+} */
 
 .form__register_login {
     color: #000;
